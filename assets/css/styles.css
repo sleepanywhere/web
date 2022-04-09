@@ -1,7 +1,7 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
-/*=============== VARIABLES CSS ===============*/
+/* VARIABLES CSS */
 :root {
   --hue: 207;
   --sat: 90%;
@@ -15,7 +15,7 @@
   --body-color: hsl(var(--hue), 100%, 99%);
   --container-color: #fff;
 
-  /*========== Font and typography ==========*/
+  /* Font and typography */
   --body-font: 'Poppins', sans-serif;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
@@ -38,7 +38,8 @@
   }
 }
 
-/*=============== BASE ===============*/
+/* BASE */
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -76,7 +77,8 @@ img {
   height: auto;
 }
 
-/*=============== THEME ===============*/
+/* THEME */
+
 .change-theme {
   position: absolute;
   top: 1.5rem;
@@ -91,7 +93,8 @@ img {
   color: var(--first-color);
 }
 
-/*========== Variables Dark theme ==========*/
+/* Variables Dark theme */
+
 body.dark-theme {
   --title-color: hsl(var(--hue), 12%, 95%);
   --text-color: hsl(var(--hue), 12%, 75%);
@@ -99,10 +102,9 @@ body.dark-theme {
   --container-color: hsl(var(--hue), 24%, 12%);
 }
 
-/*========== 
-    Color changes in some parts of 
-    the website, in light theme
-==========*/
+/* Color changes in some parts of 
+   the website, in light theme */
+   
 .dark-theme .button__gray {
   background-color: var(--container-color);
 }
@@ -127,7 +129,8 @@ body.dark-theme {
   background-color: hsl(var(--hue), 8%, 32%);
 }
 
-/*=============== REUSABLE CSS CLASSES ===============*/
+/* REUSABLE CSS CLASSES */
+
 .container {
   max-width: 968px;
   margin-left: 1.5rem;
@@ -139,7 +142,7 @@ body.dark-theme {
   gap: 1.5rem;
 }
 
-/*=============== PROFILE ===============*/
+/* PROFILE */
 .profile {
   position: relative;
   padding-top: 3.5rem;
@@ -157,18 +160,11 @@ body.dark-theme {
 .profile__perfil {
   width: 100px;
   height: 100px;
-  background: linear-gradient(180deg, 
-              hsla(var(--hue), var(--sat), var(--lig), 1) 0%, 
-              hsla(var(--hue), var(--sat), var(--lig), .2) 100%);
   border-radius: 50%;
   overflow: hidden;
   display: flex;
   align-items: flex-end;
   justify-content: center;
-}
-
-.profile__perfil img {
-  width: 75px;
 }
 
 .profile__border {
@@ -590,10 +586,12 @@ body.dark-theme {
     justify-content: center;
     column-gap: 3rem;
   }
+  
   .contact__info {
     grid-template-columns: 300px;
     justify-content: center;
   }
+  
   .contact__form {
     width: 360px;
     margin: 0 auto;
@@ -615,27 +613,30 @@ body.dark-theme {
   .profile {
     padding-top: 4rem;
   }
+  
   .profile__border {
     width: 135px;
     height: 135px;
     margin-bottom: 1rem;
   }
+  
   .profile__perfil {
     width: 120px;
     height: 120px;
   }
-  .profile__perfil img {
-    width: 90px;
-  }
+  
   .profile__profession {
     margin-bottom: 1.5rem;
   }
+  
   .profile__info {
     column-gap: 3rem;
   }
+  
   .profile__info-description {
     font-size: var(--small-font-size);
   }
+  
   .profile__buttons {
     column-gap: 2rem;
   }
@@ -643,6 +644,7 @@ body.dark-theme {
   .projects__content {
     gap: 2rem 3rem;
   }
+  
   .projects__modal {
     padding: 1.5rem;
   }
